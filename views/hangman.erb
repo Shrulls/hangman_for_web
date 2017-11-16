@@ -1,0 +1,12 @@
+<h1>Hangman!</h1>
+<br/>
+<h2><%= @guess %></h2>
+<br/>
+<p><%= @incorrect_letters %></p>
+<p><%= @remaining_guesses %></p>
+<br/>
+<p><%= @message %></p>
+<form action="/guess" method="post">
+    <input type="text" name="letter">
+    <input type="submit">
+</form>
